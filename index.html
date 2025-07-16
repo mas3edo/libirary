@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Bookmarker</title>
+    <link rel="stylesheet" href="css/index.css" />
+    <link rel="stylesheet" href="css/all.css" />
+    <link rel="stylesheet" href="css/all.min.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bree+Serif&family=PT+Sans+Caption:wght@400;700&family=Pacifico&family=Righteous&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="main">
+      <div class="container">
+        <h1>Bookmarker</h1>
+        <div class="inputs">
+          <h2>
+            <i class="fa-solid fa-bookmark"></i>
+            Bookmark your favorite sites
+            <i class="fa-solid fa-bookmark"></i>
+          </h2>
+          <div class="input">
+            <label for=""><i class="fa-solid fa-book"></i> Site Name</label>
+            <input type="text" placeholder="Bookmark Name" id="name" />
+          </div>
+          <div class="input">
+            <label for=""><i class="fa-solid fa-link"></i> Site URL</label>
+            <input type="text" placeholder="Website URL" id="url" />
+          </div>
+          <button type="submit" id="submit">Submit</button>
+        </div>
+        <div class="view">
+          <table id="table">
+            <thead>
+              <tr>
+                <th>Index</th>
+                <th>Website Name</th>
+                <th>Visit</th>
+                <th>Delete</th>
+              </tr>
+            </thead>
+            <tbody id="body"></tbody>
+          </table>
+        </div>
+      </div>
+      <div class="pop" id="pop">
+        <div class="box">
+          <header>
+            <div class="circles">
+              <div class="circle"></div>
+              <div class="circle"></div>
+              <div class="circle"></div>
+            </div>
+            <button id="close"><i class="fa-solid fa-xmark"></i></button>
+          </header>
+          <div class="write">
+            <p>
+              Site Name or Url is not valid, Please follow the rules below :
+            </p>
+            <ul>
+              <li>
+                <i class="fa-regular fa-circle-right p-2"></i>Site name must
+                contain at least 3 characters
+              </li>
+              <li>
+                <i class="fa-regular fa-circle-right p-2"></i>Site URL must be a
+                valid one
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="js/index.js"></script>
+  </body>
+</html>
